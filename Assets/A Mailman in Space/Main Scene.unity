@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: 6b9577daae26ce54db2aa521d57069f8, type: 3}
+  textBox: {fileID: 1687472637}
 --- !u!1 &1018618057
 GameObject:
   m_ObjectHideFlags: 0
