@@ -14,6 +14,8 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
     public TextMeshProUGUI textBox;
     private Story story;
 
+    
+
     private void Awake()
     {
 
@@ -24,7 +26,16 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
     {
         if (story.canContinue)
         {
-            textBox.text = story.Continue();
+            List<string> tags = story.currentTags;
+
+            if (tags.Count > 0 && tags[0] == "choice")
+
+            {
+                Debug.Log("We saw the choice");
+
+            }
+       
+            textBox.text += story.Continue();
         }
     }
 
