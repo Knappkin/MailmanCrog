@@ -131,7 +131,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 958874013}
-  - component: {fileID: 958874014}
   m_Layer: 0
   m_Name: Ink Manager
   m_TagString: Untagged
@@ -154,20 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &958874014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958874012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaa4c81857d64034a919f785efa80ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: 6b9577daae26ce54db2aa521d57069f8, type: 3}
-  textBox: {fileID: 1687472637}
 --- !u!1 &1018618057
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +240,7 @@ GameObject:
   - component: {fileID: 1663989097}
   - component: {fileID: 1663989096}
   - component: {fileID: 1663989095}
+  - component: {fileID: 1663989099}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -346,6 +332,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1663989099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663989094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa4c81857d64034a919f785efa80ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSON: {fileID: 4900000, guid: 6b9577daae26ce54db2aa521d57069f8, type: 3}
+  textBox: {fileID: 1687472637}
 --- !u!1 &1687472635
 GameObject:
   m_ObjectHideFlags: 0
