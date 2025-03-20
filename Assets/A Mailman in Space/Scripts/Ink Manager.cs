@@ -34,7 +34,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
 
             {
                 Debug.Log("We saw the choice");
-                newLine = "<u>" + "<link = \"choizes\">" + newLine + " </link>" + "</u>";
+                newLine = "<u>" + "<link = \"crog\">" + newLine + " </link>" + "</u>";
                 Debug.Log(newLine);
 
             }
@@ -51,7 +51,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("clickin do works");
+        Debug.Log("clicking works");
        TMP_Text pTextMeshPro = GetComponent<TMP_Text>();
 
         Vector3 mousePos = new Vector3(eventData.position.x, eventData.position.y, 0);
@@ -71,7 +71,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
             }
             else
             {
-               Debug.Log("nuh-uh");
+               Debug.Log("It did not work...");
             }
            
         }
