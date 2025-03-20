@@ -67,7 +67,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
             Debug.Log(linkInfo.GetLinkID());
             if (linkInfo.GetLinkID() == "")
             {
-                Debug.Log("holy shit it worked!!!");
+                Debug.Log("holy moly it worked!!!");
             }
             else
             {
