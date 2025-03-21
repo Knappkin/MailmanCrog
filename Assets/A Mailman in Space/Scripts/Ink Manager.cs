@@ -34,7 +34,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
 
             {
                 Debug.Log("We saw the choice");
-                newLine = "<u>" + "<link = \"crog\">" + newLine + " </link>" + "</u>";
+                newLine = "<u>" + "<link=\"crog\">" + newLine + "</link>" + "</u>";
                 Debug.Log(newLine);
 
             }
@@ -65,7 +65,7 @@ public class InkManager : MonoBehaviour, IPointerClickHandler
             TMP_LinkInfo linkInfo = textBox.textInfo.linkInfo[linkIndex];
             //Debug.Log(linkInfo.GetLinkText());
             Debug.Log(linkInfo.GetLinkID());
-            if (linkInfo.GetLinkID() == "")
+            if (linkInfo.GetLinkID() == "crog")
             {
                 Debug.Log("holy moly it worked!!!");
             }
